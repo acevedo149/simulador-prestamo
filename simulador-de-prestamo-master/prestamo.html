@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/simulador-credito.css">
+    <title>Simulador de Credito</title>
+</head>
+<body>
+    <div class="form">
+        <fieldset>
+            <h1>SIMULADOR DE CREDITO</h1>
+            <form>
+                <div>
+                    <label for="capital">CAPITAL 
+                        <input type="text" placeholder="Ingrese el capital prestado" id="capital">
+                        
+                    </label>
+                </div>
+                <div>
+                    <label for="couta">COUTAS 
+                        <input type="text" placeholder="Ingrese las cuotas del prestamo" id="couta">
+                        
+                    </label>
+                </div>
+                <div>
+                    <label for="interes">INTERES
+                        <input type="text" placeholder="Ingrese el interés a generar" id="interes">
+                        
+                    </label>
+                </div>
+            </form>
+        <button onclick="gen_table();">CALCULAR</button>
+        </fieldset>
+        
+        <table class="tab">
+            <thead>
+                <tr>
+                    <td>CUOTA</td>
+                    <td>CAPITAL</td>
+                    <td>INTERES</td>
+                    <td>TOTALA PAGAR</td>
+                </tr>
+            </thead>
+            <tbody id="tab">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="ft">TOTAL</td>
+                    <td id="t1"></td>
+                    <td id="t2"></td>
+                    <td id="t3"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="scripts/simulador-credito.js"></script>
+</body>
+</html>
